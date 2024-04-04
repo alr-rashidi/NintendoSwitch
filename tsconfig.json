@@ -1,31 +1,29 @@
 {
-  "compilerOptions": { /* Base Options: */
+  "compilerOptions": {
     "esModuleInterop": true,
+    "moduleDetection": "force",
+    "declaration": true,
+    "composite": true,
+    "declarationMap": true,
+    "module": "preserve",
+    "noEmit": false,
     "skipLibCheck": true,
     "target": "es6",
     "allowJs": true,
     "resolveJsonModule": true,
-    "moduleDetection": "force",
     "isolatedModules": true,
-    // "outDir": "/build",
-    /* Strictness */
+    "jsx": "react",
+    "outDir": "./build",
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "sourceMap": true,
-    /* AND if you're building for a library: */
-    "declaration": true,
-    /* AND if you're building for a library in a monorepo: */
-    "composite": true,
-    "declarationMap": true,
-    /* If NOT transpiling with TypeScript: */
-    "module": "preserve",
-    "noEmit": false,
-    /* If your code runs in the DOM: */
     "lib": [
-      "es2022",
+      "es6",
       "dom",
       "dom.iterable"
     ],
   },
-  "files": ["src/index.ts"]
+  "include": [
+    "src/**/*"
+  ]
 }
