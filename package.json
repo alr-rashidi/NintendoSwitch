@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "pnpm exec eslint src",
-    "lint:fix": "pnpm exec lint src --fix",
+    "lint:fix": "pnpm exec eslint src --fix",
     "prettier": "pnpm exec prettier src --check",
     "prettier:fix": "pnpm exec prettier src --write",
     "check": "pnpm lint && pnpm prettier",
