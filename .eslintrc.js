@@ -10,6 +10,11 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'prettier'
   ],
+  settings: {
+    react: {
+      version: 'detect'
+    }
+  },
   overrides: [
     {
       env: {
