@@ -1,36 +1,36 @@
-const path = require("path");
-const htmlWebpackPlugin = require("html-webpack-plugin");
-const ESLintPlugin = require("eslint-webpack-plugin");
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: "./src/index.tsx",
+  entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, "build"),
+    path: path.resolve(__dirname, 'build')
   },
   devServer: {
     open: true,
-    hot: true,
+    hot: true
   },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: "ts-loader",
-        exclude: ["/node_modules/"],
+        loader: 'ts-loader',
+        exclude: ['/node_modules/']
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
-      },
-    ],
+        use: ['style-loader', 'css-loader']
+      }
+    ]
   },
   plugins: [
     new htmlWebpackPlugin({
-      template: "index.html",
+      template: 'index.html'
     }),
-    new ESLintPlugin(),
+    new ESLintPlugin()
   ],
   resolve: {
-    extensions: [".jsx", ".js", ".tsx", ".ts"],
-  },
+    extensions: ['.jsx', '.js', '.tsx', '.ts']
+  }
 };

@@ -17,13 +17,7 @@
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "sourceMap": true,
-    "lib": [
-      "es6",
-      "dom",
-      "dom.iterable"
-    ],
+    "lib": ["es6", "dom", "dom.iterable"]
   },
-  "include": [
-    "src/**/*"
-  ]
+  "include": ["src/**/*"]
 }
